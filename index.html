@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src = './tour.js' ></script>
+        <title>Virtual Tour</title>
+    </head>
+    <body>
+        <a-scene id = 'main_scene'>
+            <a-sky id = 'main_container' color = 'lightblue' ></a-sky>
+            <a-camera id = 'camera' wasd-controls = 'enabled : false;' ></a-camera>
+            <a-entity id = 'main_title' position = '0 2.2 -1' 
+            text = "font : exo2bold; width: 2.5; align: center; color : black; value : PADHLE TO YAHA JAYEGA" ></a-entity>
+            <a-entity id = 'main_title' position = '0 2.1 -1' 
+                text = "font : exo2bold; width: 1; align: center; color : black; value : TRAVEL AROUND THE WORLD OF IIT" ></a-entity>
+            <a-entity id="places" tour ></a-entity>
+        </a-scene>
+    </body>
+</html>
